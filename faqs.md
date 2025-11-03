@@ -52,6 +52,18 @@ Both are defined by their use of MAC addresses and the basic Layer 2 packet stru
 
 Historically, Layer 2 networks were confined to physical proximity (e.g., Ethernet cables in a single building or campus), aligning perfectly with the "Local" in LAN. However, advancements like VXLAN (Virtual Extensible LAN) introduced overlay technologies that encapsulate Layer 2 frames over IP networks, enabling LANs to span arbitrary distances—potentially globally. This is why it's important to clarify that it's the protocol used - especially the packet structure and MAC addressing - that defines a LAN and not its _locality_. 
 
+
+---
+
+### Layer 3 & Routing
+
+
+#### <a name="router-path-calculation"></a>When a router gets a package to deliver, does it calculate the whole path the package should be sent along or just the next step?
+
+**Just the next step** (called _next-hop routing_). Each router only decides "which of my neighbors should I forward this to?" based on its routing table. That neighbor makes the same decision independently. The packet hops from router to router until it reaches its destination. It's like asking directions: each person you ask tells you which road to take next, not the complete turn-by-turn directions for your entire journey.
+
+
+
 ---
 ### Upper Layers and Applications
 
