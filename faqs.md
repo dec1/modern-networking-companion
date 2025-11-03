@@ -60,7 +60,7 @@ Historically, Layer 2 networks were confined to physical proximity (e.g., Ethern
 
 #### <a name="router-path-calculation"></a>When a router gets a package to deliver, does it calculate the whole path the package should be sent along or just the next step?
 
-**Just the next step** (called _next-hop routing_). Each router only decides _"which of my neighbors should I forward this to?"_ based on its routing table. That neighbor makes the same decision independently. The packet hops from router to router until it reaches its destination. It's like asking directions: each person you ask tells you which road to take next, not the complete turn-by-turn directions for your entire journey.
+Just the next step (called _next-hop routing_). Each router only decides _"which of my neighbors should I forward this to?"_ based on its routing table. That neighbor makes the same decision independently. The packet hops from router to router until it reaches its destination. It's like asking directions: each person you ask tells you which road to take next, not the complete turn-by-turn directions for your entire journey.
 
 
 
