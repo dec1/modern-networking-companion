@@ -62,7 +62,9 @@ Historically, Layer 2 networks were confined to physical proximity (e.g., Ethern
 
 Just the next step (called _next-hop routing_). Each router only decides _"which of my neighbors should I forward this to?"_ based on its routing table. That neighbor makes the same decision independently. The packet hops from router to router until it reaches its destination. It's like asking directions: each person you ask tells you which road to take next, not the complete turn-by-turn directions for your entire journey.
 
+#### <a name="equal-cost-paths"></a>Can there be several paths with the same cost?
 
+Yes. This is called _ECMP (Equal-Cost Multi-Path routing)_. When multiple paths have identical cost metrics, routers can load-balance traffic across them, using all paths simultaneously for better throughput. It's like having two identical roads between cities—traffic can split between them rather than everyone taking just one
 
 ---
 ### Upper Layers and Applications
