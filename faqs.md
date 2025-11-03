@@ -6,7 +6,7 @@
 
 No, it's actually the reverse. The _base message_ — the actual content you want to communicate — _lives_ at the _highest layer_. Each lower layer wraps this with _packaging_ needed to deliver it, at a lower lever of detail.
 
-_Think_: postal system. The words on your letter are the base message (your data/payload). This letter goes inside an envelope (e.g. _packet_ of this higher layer) that adds the recipient's address and postage—information needed to deliver it. That envelope might go inside a box (which you can think of as a lower layer) in the postman's van (which you can think of as part of an even lower layer), which doesn't care what's written on your letter or even what's in the box—it just provides the physical transport mechanism (electromagnetic waves on cables, radio signals through air).
+_Think_: postal system. The words on your letter are the base message (your data/payload). This letter goes inside an envelope (e.g. _packet_ of this higher layer) that adds the recipient's address and postage—information needed to deliver it. That envelope might go inside a box (which you can think of as a lower layer) in the postman's van (which you can think of as part of an even lower layer), which doesn't care what's written on your letter or even what's in the box—it just provides the physical transport mechanism (electromagnetic waves).
 
 Layer 1 is the _outermost_, most physical layer. It converts whatever bits it receives into electromagnetic waves for transmission, completely unaware of what those bits represent. It doesn't understand or interpret your message—it just transports whatever bits it's given, like a delivery truck that carries any kind of sealed box without knowing or caring what's inside.
 
