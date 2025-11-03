@@ -41,7 +41,7 @@ _**Note**_: Flooding is different to _broadcasting_, where the sender intentiona
 
 #### <a name="switch-empty-cam"></a>How can using a switch (even with an empty CAM table) yield better performance than without a switch?
 
-Two main reasons: **buffering** and **full-duplex coordination**. Even without knowing where interfaces are, the switch can queue incoming packets and send them sequentially, preventing simultaneous transmissions from colliding. It's like having a traffic controller who doesn't know which road goes where yet, but can still prevent cars from crashing into each other at an intersection by making them go one at a time. Without the switch, all devices transmit whenever they want, leading to frequent collisions.
+Two main reasons: _buffering_ and _full-duplex coordination_. Even without knowing where interfaces are, the switch can queue incoming packets and send them sequentially, preventing simultaneous transmissions from colliding. It's like having a traffic controller who doesn't know which road goes where yet, but can still prevent cars from crashing into each other at an intersection by making them go one at a time. Without the switch, all devices transmit whenever they want, leading to frequent collisions.
 
 
 #### <a name="lan-vs-layer2"></a>Is there a difference between a LAN and a layer 2 network?
@@ -60,7 +60,7 @@ Historically, Layer 2 networks were confined to physical proximity (e.g., Ethern
 
 #### <a name="router-path-calculation"></a>When a router gets a package to deliver, does it calculate the whole path the package should be sent along or just the next step?
 
-**Just the next step** (called _next-hop routing_). Each router only decides "which of my neighbors should I forward this to?" based on its routing table. That neighbor makes the same decision independently. The packet hops from router to router until it reaches its destination. It's like asking directions: each person you ask tells you which road to take next, not the complete turn-by-turn directions for your entire journey.
+**Just the next step** (called _next-hop routing_). Each router only decides _"which of my neighbors should I forward this to?"_ based on its routing table. That neighbor makes the same decision independently. The packet hops from router to router until it reaches its destination. It's like asking directions: each person you ask tells you which road to take next, not the complete turn-by-turn directions for your entire journey.
 
 
 
