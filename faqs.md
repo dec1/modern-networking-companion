@@ -52,3 +52,11 @@ Both are defined by their use of MAC addresses and the basic Layer 2 packet stru
 
 Historically, Layer 2 networks were confined to physical proximity (e.g., Ethernet cables in a single building or campus), aligning perfectly with the "Local" in LAN. However, advancements like VXLAN (Virtual Extensible LAN) introduced overlay technologies that encapsulate Layer 2 frames over IP networks, enabling LANs to span arbitrary distances—potentially globally. This is why it's important to clarify that it's the protocol used - especially the packet structure and MAC addressing - that defines a LAN and not its _locality_. 
 
+---
+### Upper Layers and Applications
+
+#### <a name="dns-ttl"></a>Does the TTL of a DNS record depend on the frequency it is being accessed?
+
+No. The _TTL (Time To Live)_ is set by the domain owner/administrator when they configure their DNS records. It specifies how long other servers should cache the answer before checking again. High-traffic sites might use short TTLs (minutes) if they need flexibility to change IPs quickly, or long TTLs (hours/days) if their infrastructure is stable and they want to reduce DNS query load. The access frequency doesn't automatically change the TTL—it's a policy decision.
+
+
